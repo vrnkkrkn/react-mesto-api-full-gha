@@ -1,0 +1,14 @@
+.element__heart {
+  width: 22px;
+  background-image: url('../../../images/VectorStroke.svg');
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  height: 19px;
+  cursor: pointer;
+}
+
+.element__heart:hover {
+  opacity: 0.5;
+}

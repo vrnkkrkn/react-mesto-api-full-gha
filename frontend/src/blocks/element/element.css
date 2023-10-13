@@ -1,0 +1,8 @@
+.element {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(282px, auto));
+    border-radius: 10px;
+    position: relative;
+    max-width: 280px;
+}

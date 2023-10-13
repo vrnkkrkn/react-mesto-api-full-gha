@@ -1,0 +1,9 @@
+.form__item-error {
+    color: #FF0000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    padding-top: 5px;
+    display: block;
+    min-height: 30px;
+}
