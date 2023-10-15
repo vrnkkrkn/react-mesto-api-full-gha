@@ -113,7 +113,7 @@ class Api {
 }
 
 const api = new Api({
-    baseUrl: 'https://mesto.vrnkkrkn.nomoredomainsrocks.ru',
+    baseUrl: 'https://api.mesto.vrnkkrkn.nomoredomainsrocks.ru',
 });
 
 export default api;

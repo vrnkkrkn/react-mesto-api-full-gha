@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://mesto.vrnkkrkn.nomoredomainsrocks.ru';
+export const BASE_URL = 'https://api.mesto.vrnkkrkn.nomoredomainsrocks.ru';
 
 /** проверка, всё ли в порядке с ответом от сервера */
 export const checkRes = (res) => {
