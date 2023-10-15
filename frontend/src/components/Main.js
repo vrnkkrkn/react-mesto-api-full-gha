@@ -9,9 +9,10 @@ export default function Main({ onCards, onEditProfile, onAddPlace, onDelete, onE
     return (
         <main className="content">
             <section className="profile">
-                <button type="button" className="profile__icon" onClick={onEditAvatar}>
-                    <img src={currentUser.avatar} alt="Аватар" className="profile__avatar" />
-                </button>
+            <div className="profile__avatar-block">
+            <img src={currentUser.avatar} alt="Аватар" className="profile__avatar" />
+            <button type="button" className="profile__icon" onClick={onEditAvatar}></button>
+            </div>
                 <div className="profile__info">
                     <div className="profile__editing">
                         <h1 className="profile__name">{currentUser.name}</h1>
