@@ -54,13 +54,15 @@ app.use(auth);
 app.use('/users', require('./routes/users'));
 app.use('/cards', require('./routes/cards'));
 
+app.use('*', (req, res, next) => {
+  next(new NotFoundError('Страница не найдена'));
+});
+
 app.use(errorLogger);
 
 /** обработчики ошибок */
 app.use(errors());
-app.use('*', (req, res, next) => {
-  next(new NotFoundError('Страница не найдена'));
-});
+
 app.use((err, req, res, next) => {
   /** если у ошибки нет статуса, выставляем 500 */
   const { statusCode = IntervalServerError, message } = err;
